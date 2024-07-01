@@ -9,14 +9,14 @@ class studentInfo
 public:
     studentInfo();
 
-    QString getId() const;
-    void setId(const QString &value);
+    int getId() const;
+    void setId(int value);
 
     QString getName() const;
     void setName(const QString &value);
 
-    int getSex() const;
-    void setSex(int value);
+    QString getSex() const;
+    void setSex(const QString &value);
 
     int getAge() const;
     void setAge(int value);
@@ -42,9 +42,10 @@ public:
     QString getCourselauchtime() const;
     void setCourselauchtime(const QString &value);
 
-    bool setData(QString Id,
+    bool setData(
+    int Id,
     QString Name,
-    int sex,
+    QString sex,
     int age,
     QString classname,
     QString coursedate,
@@ -55,10 +56,11 @@ public:
     QString courselauchtime
     );
 
-private:
-    QString Id;
+
+protected:
+    int Id;
     QString Name;
-    int sex;
+    QString sex;
     int age;
     QString classname;
     QString coursedate;
