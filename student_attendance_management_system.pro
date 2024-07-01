@@ -16,17 +16,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addstudentinfo.cpp \
+    editstudentinfo.cpp \
     main.cpp \
     mainwindow.cpp \
     optiondatabase.cpp \
     studentInfo.cpp
 
 HEADERS += \
+    addstudentinfo.h \
+    editstudentinfo.h \
     mainwindow.h \
     optiondatabase.h \
     studentInfo.h
 
 FORMS += \
+    addstudentinfo.ui \
+    editstudentinfo.ui \
     mainwindow.ui
 
 TRANSLATIONS += \

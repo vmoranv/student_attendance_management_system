@@ -5,12 +5,12 @@ studentInfo::studentInfo()
 
 }
 
-QString studentInfo::getId() const
+int studentInfo::getId() const
 {
     return Id;
 }
 
-void studentInfo::setId(const QString &value)
+void studentInfo::setId(int value)
 {
     Id = value;
 }
@@ -25,14 +25,14 @@ void studentInfo::setName(const QString &value)
     Name = value;
 }
 
-int studentInfo::getSex() const
+QString studentInfo::getSex() const
 {
-    return sex;
+    return Name;
 }
 
-void studentInfo::setSex(int value)
+void studentInfo::setSex(const QString &value)
 {
-    sex = value;
+    Name = value;
 }
 
 int studentInfo::getAge() const
@@ -115,7 +115,8 @@ void studentInfo::setCourselauchtime(const QString &value)
     courselauchtime = value;
 }
 
-bool studentInfo::setData(QString Id, QString Name, int sex, int age, QString classname, QString coursedate, int coursenum, QString coursename, QString coursetype, double credit, QString courselauchtime)
+
+bool studentInfo::setData(int Id, QString Name, QString sex, int age, QString classname, QString coursedate, int coursenum, QString coursename, QString coursetype, double credit, QString courselauchtime)
 {
     this->Id=Id;
     this->Name=Name;
